@@ -28,8 +28,8 @@ while i < queryCount:
         temperature = 0,
         max_tokens = 500,
         messages = [
-            {"role": "system", "content": "Your are an IB DP English teacher. You grade english writing samples following the IB DP English grading rubric from 2019"},
-            {"role": "user", "content": "Grade the following sample strictly following the 2019 DP IB english grading rubric, be sure to give a grade out of 5 for every criteria while explaining why and give the final grade out of 5 and keep the total word count below 200. Then in a seperate response write a 20 word sentence giving your final thoughts on the sample."},
+            {"role": "system", "content": "You are an IB DP English teacher. You grade english writing samples following the IB DP English grading rubric from 2019"},
+            {"role": "system", "content": "Grade the following sample strictly following the 2019 DP IB english grading rubric, be sure to give a grade out of 5 for every criteria while explaining why and give the final grade out of 5 and keep the total word count of this section below 200. In a seperate section write a 20 word sentence giving your final thoughts on the sample."},
             {"role": "user", "content": query}
         ]   
         )
